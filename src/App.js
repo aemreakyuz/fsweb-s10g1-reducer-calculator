@@ -1,13 +1,17 @@
-import React, { useReducer } from "react";
+import React, { useReducer, useState } from "react";
 
 import TotalDisplay from "./components/TotalDisplay";
 import CalcButton from "./components/CalcButton";
 import reducer from "./reducers";
 import { initialState } from "./reducers";
-import { addOne } from "./actions";
+import { ADD_ONE, addOne } from "./actions";
 
 function App() {
   const [state, dispatchState] = useReducer(reducer, initialState);
+
+  const incHandler = (e) => {
+    dispatchState({ type: ADD_ONE });
+  };
 
   return (
     <div className="App">
@@ -35,7 +39,7 @@ function App() {
             </div>
 
             <div className="row">
-              <CalcButton value={1} />
+              <CalcButton value={1} onClick={incHandler} />
               <CalcButton value={2} />
               <CalcButton value={3} />
             </div>
