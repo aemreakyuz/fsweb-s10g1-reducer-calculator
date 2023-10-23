@@ -69,14 +69,14 @@ export const initialState = {
 
 > _Her sayı için ayrı action eklemek sıkıcı olabilir. TÜM sayısal girdiler için çalışabilecek bir action ekleyelim_
 
-- [ ] `APPLY_NUMBER` action'a (./reducer/index.js içindeki) ve `applyNumber` action oluşturucuya (./actions/index.js içindeki) göz atalım. Bu action, action oluşturucuya iletilen bir sayıyı ekler, çarpar veya çıkarır.
-- [ ] `applyNumber` action oluşturucusunu `App.js.` içine import edin
-- [ ] Daha önce 1 butonuna eklediğimiz event handlerı silin ya da comment içerisine alın.
-- [ ] Argüman olarak bir sayı alan ve `applyNumber` ı dispatch eden bir event handler oluşturun.
-- [ ] Bu eventhandlerı, argümanına 1 vererek 1 butonunun onClick metod'una bağlayın. (Şunu unutmayın onClick metoduna bir fonksiyon aktarıyoruz, var olan bir fonksiyonu direk çalıştırmıyoruz(too many re-renders hatası alırız)
-- [ ] 1 butonuna basıldığında totali 1 artırıp ekrana yazdırıp yazdırmadığını test edin.
-- [ ] Yeni event handlerınızı gerekli değerleri vererek tek tek diğer butonlara da bağlayın.
-- [ ] Tüm butonlara tek tek tıklandığında totale doğru değerleri ekleyip eklemediğini test edin.
+- [x] `APPLY_NUMBER` action'a (./reducer/index.js içindeki) ve `applyNumber` action oluşturucuya (./actions/index.js içindeki) göz atalım. Bu action, action oluşturucuya iletilen bir sayıyı ekler, çarpar veya çıkarır.
+- [x] `applyNumber` action oluşturucusunu `App.js.` içine import edin
+- [x] Daha önce 1 butonuna eklediğimiz event handlerı silin ya da comment içerisine alın.
+- [x] Argüman olarak bir sayı alan ve `applyNumber` ı dispatch eden bir event handler oluşturun.
+- [x] Bu eventhandlerı, argümanına 1 vererek 1 butonunun onClick metod'una bağlayın. (Şunu unutmayın onClick metoduna bir fonksiyon aktarıyoruz, var olan bir fonksiyonu direk çalıştırmıyoruz(too many re-renders hatası alırız)
+- [x] 1 butonuna basıldığında totali 1 artırıp ekrana yazdırıp yazdırmadığını test edin.
+- [x] Yeni event handlerınızı gerekli değerleri vererek tek tek diğer butonlara da bağlayın.
+- [x] Tüm butonlara tek tek tıklandığında totale doğru değerleri ekleyip eklemediğini test edin.
 
 #### Bir action oluşturucu oluşturun ve bağlayın.
 
